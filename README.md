@@ -6,7 +6,7 @@ _We have developed a cheap test for a disease and we want to determine how accur
 
 If we apply the method of moments or the maximum likelihood method to the Bernoulli random variable that is sampled in this experiment we see that the conditional probability we desire can be calculated by dividing the total number of individuals with a positive test result by the total number of tests performed.  Importantly, however, the value of the probability that we are estimating using these methods is a random variable.  What we will see here is that Bayes theorem allows us to extract the distribution that is sampled by this random variable directly.  If we suppose that the outcome of the first test was positive (T_1=1) we can then write the following:
 
-![](https://render.githubusercontent.com/render/math?math=P(p=\theta|T_1=1)=\frac{P(T_1=1|p=\theta)P(p=\theta)}{P(T_1=1)} = \frac{P(T_1=1|p=\theta)P(p=\theta)}{\int_{0}^{1}P(T_1=1|p=\theta')P(p=\theta')\textrm{d}\theta'})
+![](https://render.githubusercontent.com/render/math?math=P(p=\theta|T_1=1)=\frac{P(T_1=1|p=\theta)P(p=\theta)}{P(T_1=1)}=\frac{P(T_1=1|p=\theta)P(p=\theta)}{\int_{0}^{1}P(T_1=1|p=\theta')P(p=\theta')\textrm{d}\theta'})
 
 In this expression, p is the quantity we are interested in; namely, our estimate for the conditional probability of a positive test result given the patient definitely has the disease.  ![](https://render.githubusercontent.com/render/math?math=P(p=\theta|T_1=1)) is the conditional probability density for this quantity given that the first test (![](https://render.githubusercontent.com/render/math?math=T_1)) we did gave a positive result.  This quantity is known as the posterior probability.
 
